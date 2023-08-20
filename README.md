@@ -1,15 +1,12 @@
 ## Microphone I2S
 
 ## Hardware
-
+```sh
 Raspberry Pi compatible (supports Raspberry Pi Zero and Zero W, Raspberry PiB+, Raspberry Pi 2B, Raspberry Pi 3B, Raspberry Pi 3B+, Raspberry Pi3 A+ and Raspberry Pi 4B)
-
 Audio Amplifier: MAX98357A x 2
-
 Microphone: ICS-43432 x 2
-
 LED: Led APA102 x 12
-
+```
 ## Pinout (40-pin header)
 ```sh
        3.3V --> 1    2 <-- 5V
