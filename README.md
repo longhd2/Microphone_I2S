@@ -1,12 +1,17 @@
-#Microphone I2S
+## Microphone I2S
 
-#Hardware
+## Hardware
+
 Raspberry Pi compatible (supports Raspberry Pi Zero and Zero W, Raspberry PiB+, Raspberry Pi 2B, Raspberry Pi 3B, Raspberry Pi 3B+, Raspberry Pi3 A+ and Raspberry Pi 4B)
+
 Audio Amplifier: MAX98357A x 2
+
 Microphone: ICS-43432 x 2
+
 LED: Led APA102 x 12
 
-#Pinout (40-pin header)
+## Pinout (40-pin header)
+```sh
        3.3V --> 1    2 <-- 5V
     I2C_SDA --> 3    4 <-- 5V
     I2C_SCL --> 5    6 <-- GND
@@ -27,9 +32,10 @@ LED: Led APA102 x 12
   I2S_LRCLK --> 35  36
                 37  38 <-- I2S_DIN
         GND --> 39  40 <-- I2S_DOUT
-
-#Congfig:
+```
+## Congfig:
+```sh
 echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
-
+```
 
 
