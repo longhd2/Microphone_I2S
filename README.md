@@ -19,7 +19,7 @@ LED: Led APA102 x 12
         GND --> 9   10
                 11  12 <-- I2S_BCLK
                 13  14 <-- GND
-                15  16 <-- BUTTON_GPIO (GPIO_23)
+                15  16 <-- BUTTON_1(GPIO_23)
        3.3V --> 17  18
                 19  20 <-- GND
                 21  22
@@ -33,9 +33,11 @@ LED: Led APA102 x 12
                 37  38 <-- I2S_DIN
         GND --> 39  40 <-- I2S_DOUT
 ```
-## Congfig:
+## Setting:
 ```sh
 echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
 ```
+
+Done!
 
 
