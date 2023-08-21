@@ -2,12 +2,11 @@
 
 ## Hardware
 ```sh
-Supports Raspberry Pi compatible 
-Audio Amplifier: MAX98357A x 2
-Microphone: ICS-43432 x 2
-LED: Led APA102 x 12
-- Ctrol led: GPIO 5
-Button: 4 botton (GPIO 13, 22, 25 ,26
+Supports all Raspberry Pi 
+- Audio Amplifier: MAX98357A x 2
+- Microphone: ICS-43432 x 2
+- LED: Led APA102 x 12 (Control led: GPIO 5)
+Button: 4 botton (GPIO 13, 22, 25 ,26)
 
 ```
 ## Setting:
