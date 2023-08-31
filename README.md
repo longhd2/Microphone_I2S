@@ -11,7 +11,13 @@ Button: 4 botton (GPIO 13, 22, 25 ,26)
 ```
 ## Setting:
 ```sh
+sudo nano /usr/share/alsa/alsa.conf
+
+tìm đến dòng số 14 "~/.asoundrc" và thêm # vào đầu để tắt .asoundrc
+
 echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
+
+
 sudo reboot
 ```
 
