@@ -25,11 +25,10 @@ Sau đó
 ```sh
 echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
 
+```
 ![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/4dc3bae1-6cd2-4f90-946b-783b4f90ebe8)
 
-```
-
-
+Sau đó cài đặt cho tệp âm thanh
 ```sh
 sudo nano /etc/asound.conf
 ```
@@ -73,3 +72,4 @@ Sau đó reboot để khởi động lại:
 ```sh
 sudo reboot
 ```
+Chúc bạn thành công!
