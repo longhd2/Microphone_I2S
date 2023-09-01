@@ -10,25 +10,28 @@ Button: 4 botton (GPIO 13, 22, 25 ,26)
 
 ```
 ## Setting:
+ssh vào pi
+![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/8f03b8be-271c-4e4f-bbb9-c9465eb33fb5)
+
+Sau đó gõ lệnh
 ```sh
 sudo nano /usr/share/alsa/alsa.conf
 ```
 tìm đến dòng số 14 "~/.asoundrc" và thêm # vào đầu để tắt .asoundrc
 ![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/ca1c2de4-11de-46ba-8096-25cafe1e0121)
 Sau đó bấm Ctr + Y + để lưu lại
+
+Sau đó
 ```sh
 echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
+
+![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/4dc3bae1-6cd2-4f90-946b-783b4f90ebe8)
+
 ```
 
 
-Lệnh Thống kê ID của Mic USB và Loa
 ```sh
-arecord -l
-aplay -l
-```
-Chạy lệnh sau
-```sh
-sudo nano /home/pi/.asoundrc
+sudo nano /etc/asound.conf
 ```
 Cửa sổ nano hiện lên, paste dòng sau
 
@@ -66,8 +69,7 @@ ctl.!default {
 
 
 ```
-Coppy cấu hình âm thanh vào etc:
+Sau đó reboot để khởi động lại:
 ```sh
-sudo cp /home/pi/.asoundrc /etc/asound.conf
 sudo reboot
 ```
