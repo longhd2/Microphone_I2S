@@ -14,6 +14,8 @@ Button: 4 botton (GPIO 13, 22, 25 ,26)
 sudo nano /usr/share/alsa/alsa.conf
 ```
 tìm đến dòng số 14 "~/.asoundrc" và thêm # vào đầu để tắt .asoundrc
+![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/ca1c2de4-11de-46ba-8096-25cafe1e0121)
+Sau đó bấm Ctr + Y + để lưu lại
 ```sh
 echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
 ```
