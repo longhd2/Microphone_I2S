@@ -20,7 +20,7 @@
 
 - **Hỗ trợ cho tất cả các phiên bản Raspberry Pi**
 - **Bộ khuếch đại âm thanh:** MAX98357A x 2
-- **Microphone:** ICS-43432 x 2
+- **Microphone:** ICS-43434 x 2
 - **LED:** Led APA102 x 12 (Control led: GPIO 5)
 - **Button:** 4 button (GPIO 13, 22, 25, 26)
 
@@ -106,7 +106,7 @@ sudo reboot
 
 ## Liên Hệ
 
-Nếu bạn có bất kỳ câu hỏi hoặc ý kiến phản hồi, vui lòng liên hệ với chúng tôi qua [địa chỉ email hoặc trang web của bạn].
+Nếu bạn có bất kỳ câu hỏi hoặc ý kiến phản hồi, vui lòng liên hệ với chúng tôi qua [vipiteam@gmail.com].
 
 ```
 Chúc bạn thành công!
