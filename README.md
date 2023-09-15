@@ -24,14 +24,11 @@
 - **LED:** Led APA102 x 12 (Control led: GPIO 5)
 - **Button:** 4 button (GPIO 13, 22, 25, 26)
 
-## Setting
+## Sử Dụng
 
 - Bật Raspberry Pi và mở ứng dụng thu âm.
 - Sử dụng nút bấm để điều khiển chức năng của Microphone I2S.
 - Tận hưởng âm thanh chất lượng cao và hiệu ứng ánh sáng độc đáo.
-
-
-
 
 ### SSH vào Raspberry Pi Image
 
@@ -41,72 +38,65 @@
 
    ```sh
    sudo nano /usr/share/alsa/alsa.conf
+   ```
 
-![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/8f03b8be-271c-4e4f-bbb9-c9465eb33fb5)
+   Tìm đến dòng số 14 `~/.asoundrc` và thêm dấu "#" vào đầu để tắt `.asoundrc`. Sau đó, bấm `Ctrl + O` để lưu lại, sau đó nhấn `Enter`, cuối cùng bấm `Ctrl + X` để thoát khỏi trình soạn thảo nano.
 
-Sau đó gõ lệnh
-```sh
-sudo nano /usr/share/alsa/alsa.conf
-```
-tìm đến dòng số 14 "~/.asoundrc" và thêm # vào đầu để tắt .asoundrc
-![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/ca1c2de4-11de-46ba-8096-25cafe1e0121)
-Sau đó bấm Ctr + Y + để lưu lại
+3. Tiếp theo, gõ lệnh sau để thêm dtoverlay vào tệp cấu hình:
 
-Sau đó
-```sh
-echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
+   ```sh
+   echo "dtoverlay=googlevoicehat-soundcard" | sudo tee -a /boot/config.txt
+   ```
 
-```
-![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/4dc3bae1-6cd2-4f90-946b-783b4f90ebe8)
+4. Gõ lệnh sau để cài đặt cho tệp âm thanh:
 
-Sau đó cài đặt cho tệp âm thanh
-```sh
-sudo nano /etc/asound.conf
-```
-Cửa sổ nano hiện lên, paste dòng sau
+   ```sh
+   sudo nano /etc/asound.conf
+   ```
 
-```sh
-options snd_rpi_googlemihat_soundcard index=0
+   Trong cửa sổ nano, paste nội dung sau:
 
-pcm.softvol {
-    type softvol
-    slave.pcm dmix
-    control {
-        name Master
-        card sndrpigooglevoi
-    }
-}
+   ```sh
+   options snd_rpi_googlemihat_soundcard index=0
 
-pcm.micboost {
-    type route
-    slave.pcm dsnoop
-    ttable {
-        0.0 30.0
-        1.1 30.0
-    }
-}
+   pcm.softvol {
+       type softvol
+       slave.pcm dmix
+       control {
+           name Master
+           card sndrpigooglevoi
+       }
+   }
 
-pcm.!default {
-    type asym
-    playback.pcm "plug:softvol"
-    capture.pcm "plug:micboost"
-}
+   pcm.micboost {
+       type route
+       slave.pcm dsnoop
+       ttable {
+           0.0 30.0
+           1.1 30.0
+       }
+   }
 
-ctl.!default {
-    type hw
-    card sndrpigooglevoi
-}
+   pcm.!default {
+       type asym
+       playback.pcm "plug:softvol"
+       capture.pcm "plug:micboost"
+   }
 
+   ctl.!default {
+       type hw
+       card sndrpigooglevoi
+   }
+   ```
 
-```
-Sau đó reboot để khởi động lại:
-```sh
-sudo reboot
-```
+5. Lưu và đóng tệp cấu hình bằng cách nhấn `Ctrl + O`, sau đó nhập "Y" để xác nhận và "Enter" để lưu.
+
+6. Cuối cùng, gõ lệnh sau để khởi động lại Raspberry Pi:
+
+   ```sh
+   sudo reboot
+   ```
 
 ## Liên Hệ
 
 Nếu bạn có bất kỳ câu hỏi hoặc ý kiến phản hồi, vui lòng liên hệ với chúng tôi qua [vipiteam@gmail.com].
-
-```
-Chúc bạn thành công!
