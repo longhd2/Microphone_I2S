@@ -1,4 +1,4 @@
-## Microphone I2S
+
 # Microphone I2S cho Raspberry Pi
 
 ![Microphone I2S](link-to-your-image.png)
@@ -9,7 +9,7 @@
 
 - **Hỗ Trợ Tất Cả Các Phiên Bản Raspberry Pi:** Sản phẩm này tương thích với tất cả các phiên bản của Raspberry Pi, từ Raspberry Pi 3 đến Raspberry Pi Zero, mang lại tính linh hoạt cho các ứng dụng của bạn.
 
-- **Chất Lượng Âm Thanh Tối Ưu:** Được trang bị hai microphone ICS-43432 chất lượng cao, sản phẩm này bắt lấy âm thanh với độ chính xác và chi tiết tối ưu, giúp bạn ghi âm và thu âm môi trường xung quanh một cách rõ ràng và sắc nét.
+- **Chất Lượng Âm Thanh Tối Ưu:** Được trang bị hai microphone ICS-43434 chất lượng cao, sản phẩm này bắt lấy âm thanh với độ chính xác và chi tiết tối ưu, giúp bạn ghi âm và thu âm môi trường xung quanh một cách rõ ràng và sắc nét.
 
 - **Hệ Thống LED APA102:** Với 12 đèn LED APA102 tích hợp, bạn có thể tạo ra các hiệu ứng ánh sáng sáng tạo và thú vị, biểu thị trạng thái hoặc tương tác với môi trường sử dụng LED này.
 
