@@ -3,13 +3,13 @@
 ![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/9aa7127b-9fc9-406e-baad-6c8b14ff37de)
 
 
-**Microphone I2S cho Raspberry Pi** là một phần mở rộng đa chức năng cho Raspberry Pi, được thiết kế để mở rộng khả năng thu âm của thiết bị. Với sự hỗ trợ cho tất cả các phiên bản của Raspberry Pi, âm thanh chất lượng cao và tích hợp LED APA102, 4 phím bấm cảm ứng nó là một sự bổ sung tuyệt vời cho các dự án Raspberry Pi của bạn.
+**Microphone I2S cho Raspberry Pi** là một phần mở rộng đa chức năng cho Raspberry Pi, được thiết kế để mở rộng khả năng thu âm và phát lại âm thanh của thiết bị. Hỗ trợ cho tất cả các phiên bản của Raspberry Pi cùng với LED APA102 và 4 phím bấm cảm ứng nó là một sự bổ sung tuyệt vời cho các dự án Raspberry Pi của bạn.
 
 ## Đặc Điểm Chính
 
 - **Hỗ Trợ Tất Cả Các Phiên Bản Raspberry Pi:** Sản phẩm này tương thích với tất cả các phiên bản của Raspberry Pi, từ Raspberry Raspberry Pi Zero đến Raspberry Pi 4.
 
-- **Chất Lượng Âm Thanh Tối Ưu:** Được trang bị hai microphone ICS-43434 kỹ thuật số chất lượng cao, và 2 bộ khuếch đại âm thanh Streo 3W âm thanh với độ chính xác và chi tiết tối ưu.
+- **Chất Lượng Âm Thanh Tối Ưu:** Được trang bị hai microphone ICS-43434 kỹ thuật số chất lượng cao, và 2 bộ khuếch đại âm thanh Streo 3W cho chất lượng âm thanh với độ chính xác và chi tiết tối ưu.
 
 - **Hệ Thống LED APA102:** Với 12 đèn LED APA102 tích hợp, bạn có thể tạo ra các hiệu ứng ánh sáng sáng tạo và thú vị.
 
@@ -25,11 +25,7 @@
 - **LED:** Led APA102 x 12 (Control led: GPIO 5)
 - **Button:** 4 button (GPIO 13, 22, 25, 26)
 
-## Sử Dụng
-
-- Bật Raspberry Pi và mở ứng dụng thu âm.
-- Sử dụng nút bấm để điều khiển chức năng của Microphone I2S.
-- Tận hưởng âm thanh chất lượng cao và hiệu ứng ánh sáng độc đáo.
+## Setting
 
 ### SSH vào Raspberry Pi Image
 
@@ -100,4 +96,6 @@
 
 ## Liên Hệ
 
-Nếu bạn có bất kỳ câu hỏi hoặc ý kiến phản hồi, vui lòng liên hệ với chúng tôi qua [vipiteam@gmail.com].
+Nếu bạn có bất kỳ câu hỏi hoặc ý kiến phản hồi, vui lòng liên hệ với chúng tôi qua email vipiteam@gmail.com hoặc fanfage https://www.facebook.com/groups/285131860062315/.
+
+
