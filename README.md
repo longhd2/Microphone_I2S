@@ -1,6 +1,6 @@
 # Microphone I2S cho Raspberry Pi
 
-![Microphone I2S](link-to-your-image.png)
+![image](https://github.com/longhd2/Microphone_I2S/assets/43842525/c12c4960-7403-4c1e-8f89-10b2c8ef5658)
 
 **Microphone I2S cho Raspberry Pi** là một phần mở rộng đa chức năng cho Raspberry Pi, được thiết kế để mở rộng khả năng thu âm và ánh sáng của thiết bị. Với sự hỗ trợ cho tất cả các phiên bản của Raspberry Pi, âm thanh chất lượng cao và tích hợp LED APA102, nó là một sự bổ sung tuyệt vời cho các dự án Raspberry Pi của bạn.
 
